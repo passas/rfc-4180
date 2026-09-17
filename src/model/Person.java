@@ -104,7 +104,7 @@ public class Person
 
         try (InputStream in = Files.newInputStream(Path.of("../csv-parser/resources/data.csv")))
         {
-            Rfc4180Parser.parse(in, StandardCharsets.UTF_8, true, System.out::println);
+            Rfc4180Parser.parse(in, StandardCharsets.UTF_8, ',', true, System.out::println);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
