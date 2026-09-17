@@ -1,4 +1,4 @@
-package app.model;
+package model;
 
 import csv.exporter.Rfc4180BeanExporter;
 import csv.parser.Rfc4180BeanParser;
